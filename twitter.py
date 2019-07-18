@@ -17,7 +17,7 @@ tweetFile = open("tweets_small.json", "r")
 tweetData = json.load(tweetFile)
 tweetFile.close()
 
-
+#hi
 # We use the JSON library to get data from the file as JSON data.
 text = []
 polarity_list = []
