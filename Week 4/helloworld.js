@@ -29,3 +29,30 @@ function changePic(){
   pic.setAttribute("style", `transform: rotate(${deg}deg)`);
   deg += 30;
 }
+
+
+// changes the fonts
+var fonts = ["'Playfair Display', serif", "'Fascinate', cursive","'Geostar Fill', cursive","'Anton', sans-serif","'Arvo', serif"];
+var poz = 0;
+console.log("up tohere")
+
+
+document.getElementById("the name").addEventListener("click",
+  function (){
+    document.getElementById("the name").setAttribute("style", `font-family: ${fonts[poz]}`);
+    poz ++;
+    if (poz >=  fonts.length){
+      poz = 0;
+    }
+  }
+)
+
+
+console.log("lol")
+document.getElementById("NicoleIs").addEventListener("click",
+  function(){
+    console.log("helo")
+    alert("Yeehaw partner. You discovered mail");
+    document.getElementById("NicoleIs").style.color = "green"
+  }
+)
